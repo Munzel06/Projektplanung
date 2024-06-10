@@ -1,0 +1,46 @@
+\addbibresource{referenzen.bib}
+\setabbreviationstyle[acronym]{long-short}
+\newacronym{ma}{MA}{Maturaarbeit}
+\makeglossaries
+
+%\hypersetup{hidelinks}
+
+\renewcommand{\thefootnote}{\roman{footnote}}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{Picture/pfadililie.png}%
+\vfill
+}}}
+
+\renewcommand{\maketitle}{
+    \begin{titlepage}
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[anchor=north east,inner sep=3cm] at (current page.north east) {\includegraphics[width=3cm]{Picture/ems-logo.png}};
+        \end{tikzpicture}
+        \vspace*{5cm}
+        {\par}
+        {\large \textbf{Maturitätsarbeit} \par Projektantrag \par}
+        \vspace{3cm}
+        {\Huge \textbf{App zur Pfaditechnik} \par} 
+        \vspace{0.3cm}
+        \Large Eine App für die Eltern und älteren Kinder zum Erlernen der\par Pfaditechnik. \par
+        \vspace{0.2cm}
+        {\large Conters, April 2024 \par}
+        \vspace{7cm}
+        \large Autor: Andrea Bardill, 2006 \par
+        \large Coach: Michael Brand
+        \newpage
+    \end{titlepage}
+}
+
+\pagestyle{fancy}
+\lhead{Projektantrag MA}
+\chead{Andrea Bardill}
+\rhead{\includegraphics[width=0.8cm]{Picture/ems-logo.png}}
+\setlength{\headheight}{24.56699pt}
+\addtolength{\topmargin}{-12.56699pt}
