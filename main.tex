@@ -5,7 +5,7 @@
 \usepackage[Glenn]{fncychap}
 \usepackage[german]{babel}
 \usepackage[style=numeric-comp, backend=biber, sorting = none]{biblatex}
-\usepackage{hyperref, cleveref, fancyhdr, tikz, microtype, tabularx, minted}
+\usepackage{hyperref, cleveref, fancyhdr, tikz, microtype, tabularx, minted, caption, float, tablefootnote, csquotes}
 \usepackage{eso-pic, footmisc}
 \usepackage{preamble}
 \begin{document}
@@ -22,6 +22,10 @@
 
 \include{controlling}
 
+\include{anhang}
+
 
 \printbibliography
+\listoffigures
+\listoftables
 \end{document}
